@@ -1,12 +1,11 @@
-import AppLayout from "./AppLayout";
-
+import AppLayout from "@/app/AppLayout";
 
 export default function Home() {
   return (
    <div className="">
     <AppLayout>
-      {/* <Table/> */}
-      help
+
+    service
     </AppLayout>
    </div>
   );
