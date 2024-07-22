@@ -2,8 +2,9 @@
 import { useState, useEffect, useRef } from 'react';
 import { FaUser, FaPowerOff } from 'react-icons/fa';
 import {useRouter} from 'next/navigation'
+import Image from 'next/image';
 
-export default function Header() {
+export default function Navbar() {
   const router = useRouter()
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
@@ -34,7 +35,7 @@ export default function Header() {
   return (
     <div className="flex fixed top-0 w-full bg-white left-0  h-[12vh] justify-between px-10 py-4 shadow-xl border-b items-center">
       <div onClick={()=>router.push('/')}>
-        <img
+        <Image
 
           width={240}
           src="https://www.ecoavenstra.com/frontend/assets/images/logo-blue.png"
@@ -47,7 +48,7 @@ export default function Header() {
           onClick={toggleDropdown}
         >
           <div>Admin</div>
-          <img
+          <Image
             src="https://media.istockphoto.com/id/1327592506/vector/default-avatar-photo-placeholder-icon-grey-profile-picture-business-man.jpg?s=612x612&w=0&k=20&c=BpR0FVaEa5F24GIw7K8nMWiiGmbb8qmhfkpXcp1dhQg="
             alt="Admin"
             className="w-8 h-8 rounded-full"

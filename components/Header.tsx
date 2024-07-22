@@ -1,7 +1,7 @@
 import { FaHome } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 
-export default function({title} : {title : string} ){
+export default function Header({title} : {title : string} ){
     return (
         <div className="flex justify-between items-center px-6 py-4 bg-transparent ">
       <div className="flex items-center gap-4">
