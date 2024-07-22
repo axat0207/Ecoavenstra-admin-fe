@@ -36,9 +36,9 @@ export default function Navbar() {
     <div className="flex fixed top-0 w-full bg-white left-0  h-[12vh] justify-between px-10 py-4 shadow-xl border-b items-center">
       <div onClick={()=>router.push('/')}>
         <Image
-
+          height={200}
           width={240}
-          src="https://www.ecoavenstra.com/frontend/assets/images/logo-blue.png"
+          src={'/logo.png'}
           alt="Logo"
         />
       </div>
@@ -49,7 +49,10 @@ export default function Navbar() {
         >
           <div>Admin</div>
           <Image
-            src="https://media.istockphoto.com/id/1327592506/vector/default-avatar-photo-placeholder-icon-grey-profile-picture-business-man.jpg?s=612x612&w=0&k=20&c=BpR0FVaEa5F24GIw7K8nMWiiGmbb8qmhfkpXcp1dhQg="
+          height={200}
+          width={240}
+
+          src={'/dummy.jpg'}
             alt="Admin"
             className="w-8 h-8 rounded-full"
           />
